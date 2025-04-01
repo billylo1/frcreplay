@@ -29,7 +29,7 @@ RECONNECT_OFFLINE_DELAY = 5
 RECONNECT_DC_DELAY = 1
 
 TWITCH_URL_TEMPLATE = 'https://www.twitch.tv/{}'
-TWITCH_ONLINE_ENDPOINT = 'https://api.twitch.tv/kraken/streams/{}?client_id=5j0r5b7qb7kro03fvka3o8kbq262wwm&callback=badge.drawStream'
+TWITCH_ONLINE_ENDPOINT = 'https://twitch.tv/{}'
 
 STREAM_QUALITY = 'best'
 

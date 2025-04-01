@@ -30,12 +30,18 @@ import traceback
 import PIL
 
 MATCH_DETECTOR_FPS = 1 / 3
-FFMPEG_BINARY = '/usr/bin/ffmpeg'
-FFMPEG_COMMAND = [
+FFMPEG_BINARY = '/opt/homebrew/bin/ffmpeg'
+FFMPEG_COMMAND0 = [
     FFMPEG_BINARY, '-i', '-', '-vf',
     'fps={}'.format(MATCH_DETECTOR_FPS),
     '-an', '-sn', '-c:v', 'rawvideo', '-pix_fmt', 'rgb24', '-f', 'rawvideo', '-'
 ]
+FFMPEG_COMMAND = [
+    FFMPEG_BINARY, '-i', '-',
+    '-an', '-sn', '-c:v', 'rawvideo', '-pix_fmt', 'rgb24', '-f', 'rawvideo', '-'
+
+]
+
 
 MATCH_ID_TEMPLATE = '#{} {}'
 
